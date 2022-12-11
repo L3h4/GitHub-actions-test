@@ -3,10 +3,11 @@ name: Check code with linter
 on: push
 
 jobs:
-  steps:
-  - uses: actions/checkout@v2  
-  - name: Python Linter
-    uses: sunnysid3up/python-linter@master
-    with:
-      source: "."
-      strict: "high"
+  test:
+    steps:
+    - uses: actions/checkout@v2  
+    - name: Python Linter
+      uses: sunnysid3up/python-linter@master
+      with:
+        source: "."
+        strict: "high"
