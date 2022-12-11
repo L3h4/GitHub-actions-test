@@ -2,7 +2,8 @@ import os
 
 
 def main():
-    print(f"Hello {os.getenv('TEST')}")
+    test = os.getenv('TEST')
+    print(f"Hello {test=}")
 
 
 if __name__ == "__main__":
